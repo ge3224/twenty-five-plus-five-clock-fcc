@@ -304,7 +304,7 @@ export default function App() {
           <h2 className="mb-3 text-6xl text-red-500" id="timer-label">
             {currentTimer}
           </h2>
-          <div className="mb-3 text-3xl text-red-500" id="time-left">
+          <div className="mb-3 text-3xl text-red-500" id="time-left" data-testid="time-left-element">
             {currentTimer === Timer.session
               ? millisecondsToMinutesAndSeconds(remainingSession)
               : millisecondsToMinutesAndSeconds(remainingBreak)}
